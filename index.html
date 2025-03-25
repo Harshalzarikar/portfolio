@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cube.css" />
+    <div class="scroll-progress"></div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+    <button id="theme-switch" class="theme-switch" aria-label="Toggle theme">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="12" cy="12" r="5" />
+        <path
+          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+        />
+      </svg>
+    </button>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-left">
+          <div class="profile-section">
+            <img
+              src="images/passport6.jpeg"
+              alt="Profile"
+              class="profile-image"
+            />
+            <div class="social-links">
+              <a
+                href="https://github.com/harshalzarikar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <img src="images/github.svg" alt="GitHub" class="social-icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/harshal-zarikar-182536209/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <img
+                  src="images/linkedin.svg"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://leetcode.com/u/harshal1412/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <img
+                  src="images/leetcode.svg"
+                  alt="LeetCode"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="logo">Portfolio</div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="hero parallax">
+        <div class="parallax-layer" data-speed="0.5"></div>
+        <div id="particles-js"></div>
+        <div class="hero-content">
+          <h1 class="typing-text">Welcome to My Portfolio</h1>
+          <h2 class="typing-name">I'm Harshal Zarikar</h2>
+          <p class="fade-in">
+            I'm a passionate developer specializing in AI and Machine Learning
+          </p>
+          <p class="fade-in-delayed">
+            Transforming ideas into intelligent solutions
+          </p>
+          <div class="cube-container">
+            <div class="cube">
+              <div class="cube-face front">Python & ML</div>
+              <div class="cube-face back">Web Dev</div>
+              <div class="cube-face right">FastAPI</div>
+              <div class="cube-face left">Data Science</div>
+              <div class="cube-face top">AI/NLP</div>
+              <div class="cube-face bottom">Problem Solving</div>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="cta-button">View My Work</a>
+            <a href="#contact" class="cta-button outline">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline animate-on-scroll">
+        <h2>Experience Timeline</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>AI Developer at Finsocial</h3>
+              <p class="timeline-date">2024 - Present</p>
+              <p>
+                Developing NLP-based applications and implementing FastAPI-based
+                web solutions.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Machine Learning Intern at iNeuron.ai</h3>
+              <p class="timeline-date">2022 - 2023</p>
+              <p>
+                Implemented and optimized machine learning models for real-world
+                applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+          <div class="resume-header">
+            <div class="resume-name-contact">
+              <h3>HARSHAL ZARIKAR</h3>
+              <div class="contact-info">
+                <p>📞 +91 9284360901 | ✉️ harshalzarikar14@gmail.com</p>
+                <p>📍 Aurangabad, Maharashtra 431005</p>
+              </div>
+            </div>
+            <div class="resume-photo-placeholder"></div>
+          </div>
+
+          <div class="resume-section">
+            <h4>SUMMARY</h4>
+            <p>
+              Recent B.Tech graduate (2024) with a strong foundation in Python,
+              Machine Learning, Web Development, and Data Science. Demonstrated
+              ability to identify and solve complex problems through internships
+              and hands-on projects. Currently working as an AI Intern at
+              Finsocial Digital System, gaining experience in LLM (Ollama),
+              FastAPI, and Web Scraping. Eager to join a dynamic organization
+              where I can apply my technical skills, contribute to growth, and
+              gain valuable industry experience.
+            </p>
+          </div>
+
+          <div class="resume-section">
+            <h4>EDUCATION</h4>
+            <div class="education-item">
+              <h5>Bachelor of Technology (B.Tech)</h5>
+              <p>Deogiri Institute of Engineering and Management Studies</p>
+              <p class="education-date">2020 - 2024</p>
+              <ul>
+                <li>
+                  Completed B.Tech with focus on Computer Science and
+                  Engineering
+                </li>
+                <li>
+                  Developed strong foundation in programming, algorithms, and
+                  software development
+                </li>
+                <li>
+                  Participated in technical workshops and coding competitions
+                </li>
+                <li>
+                  Worked on various academic projects applying theoretical
+                  concepts to practical solutions
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>EXPERIENCE</h4>
+            <div class="experience-item">
+              <h5>AI Intern, Finsocial Digital System (Current)</h5>
+              <ul>
+                <li>
+                  Worked on Large Language Models (LLM) using Ollama for
+                  NLP-based applications.
+                </li>
+                <li>
+                  Developed FastAPI-based web applications for efficient API
+                  handling.
+                </li>
+                <li>
+                  Implemented web scraping techniques to extract valuable
+                  insights from various sources.
+                </li>
+                <li>
+                  Collaborated with the team to optimize AI-driven solutions for
+                  business applications.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h5>Machine Learning Intern, iNeuron.ai</h5>
+              <ul>
+                <li>
+                  Developed and optimized machine learning models for real-world
+                  business applications.
+                </li>
+                <li>
+                  Worked extensively on data preprocessing, feature selection,
+                  and model tuning to improve model accuracy and efficiency.
+                </li>
+                <li>
+                  Collaborated with a team to implement models into production,
+                  ensuring scalability and robustness.
+                </li>
+                <li>
+                  Gained hands-on experience with end-to-end machine learning
+                  workflows, from data acquisition to deployment.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h5>Data Science Intern, Feynnlab</h5>
+              <ul>
+                <li>
+                  Developed machine learning models for various applications,
+                  handling tasks like data preprocessing, feature engineering,
+                  and model evaluation.
+                </li>
+                <li>
+                  Optimized model performance and provided insights that
+                  supported data-driven decision-making.
+                </li>
+                <li>
+                  Presented findings and recommendations to stakeholders,
+                  contributing to project strategy and optimization.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>TECHNICAL SKILLS</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <h5 data-progress="95">Python</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5 data-progress="90">Machine Learning</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5 data-progress="85">FastAPI</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5 data-progress="80">JavaScript</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5 data-progress="85">HTML/CSS</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5 data-progress="75">SQL</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-categories">
+              <div class="skill-category">
+                <h5>Languages:</h5>
+                <p>Java, Python, C, C++, JavaScript, MySQL, HTML/CSS</p>
+              </div>
+              <div class="skill-category">
+                <h5>Frameworks & Tools:</h5>
+                <p>
+                  React.js, FastAPI, Flask, Git, Google Cloud Platform, VS Code,
+                  Visual Studio, PyCharm
+                </p>
+              </div>
+              <div class="skill-category">
+                <h5>Libraries:</h5>
+                <p>
+                  Pandas, NumPy, Matplotlib, TensorFlow, Keras, Scikit-learn,
+                  OpenCV
+                </p>
+              </div>
+              <div class="skill-category">
+                <h5>Other:</h5>
+                <p>
+                  Machine Learning, RestAPI, Data Structures & Algorithms,
+                  Object-Oriented Programming (OOPS), Web Scraping
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>SOFT SKILLS</h4>
+            <p>
+              <span>Analytical Thinking</span>
+              <span>Problem-Solving</span>
+              <span>Time Management</span>
+              <span>Decision-Making</span>
+              <span>Project Management</span>
+              <span>Team Collaboration</span>
+            </p>
+          </div>
+
+          <div class="resume-section">
+            <h4>CERTIFICATIONS</h4>
+            <div class="certifications">
+              <div class="certification-item">
+                <h5>Machine Learning</h5>
+                <p>Simplilearn</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-download">
+            <a href="HARSHALRESUME2024 (1).pdf" download class="download-btn"
+              >Download Full Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects animate-on-scroll">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact animate-on-scroll">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="direct-contact">
+            <div class="contact-method">
+              <img src="images/phone.svg" alt="Phone" class="contact-icon" />
+              <span>+91 9284360901</span>
+            </div>
+            <div class="contact-method">
+              <img src="images/email.svg" alt="Email" class="contact-icon" />
+              <a href="mailto:harshalzarikar14@gmail.com"
+                >harshalzarikar14@gmail.com</a
+              >
+            </div>
+            <div class="contact-method">
+              <img
+                src="images/linkedin.svg"
+                alt="LinkedIn"
+                class="contact-icon"
+              />
+              <a
+                href="https://www.linkedin.com/in/harshal-zarikar-182536209/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn Profile</a
+              >
+            </div>
+          </div>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script>
+      // Scroll Progress Indicator
+      window.onscroll = function () {
+        let winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        let height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.querySelector(".scroll-progress").style.width = scrolled + "%";
+
+        // Back to Top Button
+        let backToTop = document.getElementById("back-to-top");
+        if (winScroll > 300) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+
+      // Back to Top Click Handler
+      document.getElementById("back-to-top").onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+
+      // Animate Skill Bars on Scroll
+      const skillObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const progressBar = entry.target.querySelector(".skill-progress");
+              if (progressBar) {
+                const progress = progressBar.getAttribute("data-progress");
+                // Reset width to ensure animation works properly
+                progressBar.style.width = "0%";
+                // Use setTimeout to ensure the animation triggers after reset
+                setTimeout(() => {
+                  progressBar.style.width = progress + "%";
+                }, 50);
+                // Add visible class to the skill item
+                entry.target.classList.add("visible");
+              }
+              // Unobserve after animation is triggered
+              skillObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document
+        .querySelectorAll(".skill-item")
+        .forEach((item) => skillObserver.observe(item));
+    </script>
+  </body>
+</html>
